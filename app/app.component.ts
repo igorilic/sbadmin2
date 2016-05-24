@@ -14,7 +14,7 @@ import { LoginComponent } from './layout/login/login.component';
     styleUrls:['app.component.css']
 })
 @RouteConfig([
-    {path: '/', component: LoginComponent, as: 'Login', useAsDefault: true},
+    {path: '/login', component: LoginComponent, as: 'Login'},
     {path: '/dashboard/...', component: PortalComponent, name: 'Dashboard'}
 ])
 export class AppComponent { }

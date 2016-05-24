@@ -11,13 +11,7 @@ import { TopnavComponent } from '../nav/topnav/topnav.component';
     moduleId: module.id,
     selector: 'dashboard',
     templateUrl: 'portal.component.html',
-    encapsulation: ViewEncapsulation.None,
-    styles:[`
-    body {
-        background: none;
-        background-color: #f8f8f8;
-    }
-    `],
+    encapsulation: ViewEncapsulation.Emulated,
     directives: [ROUTER_DIRECTIVES, NaslovnaComponent, SidenavComponent, TopnavComponent]
 })
 @RouteConfig([

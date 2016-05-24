@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { CORE_DIRECTIVES } from '@angular/common';
-import {DropdownDirective, DropdownToggleDirective} from 'ng2-bootstrap/ng2-bootstrap';
-import { DROPDOWN_DIRECTIVES, ACCORDION_DIRECTIVES } from 'ng2-bootstrap/ng2-bootstrap';
+// import {DropdownDirective, DropdownToggleDirective} from 'ng2-bootstrap/ng2-bootstrap';
+// import { DROPDOWN_DIRECTIVES, ACCORDION_DIRECTIVES } from 'ng2-bootstrap/ng2-bootstrap';
 import { RouteConfig, ROUTER_DIRECTIVES, Router } from '@angular/router-deprecated';
 import { NaslovnaComponent } from '../../portal/naslovna.component';
 
@@ -10,9 +10,9 @@ import { NaslovnaComponent } from '../../portal/naslovna.component';
     moduleId: module.id,
     selector: 'topnav',
     templateUrl: 'topnav.component.html',
-    directives: [NaslovnaComponent, DropdownDirective, DropdownToggleDirective, DROPDOWN_DIRECTIVES, ACCORDION_DIRECTIVES, ROUTER_DIRECTIVES],
-    providers: [DROPDOWN_DIRECTIVES, DropdownToggleDirective, DropdownDirective],
-    encapsulation: ViewEncapsulation.None
+    directives: [NaslovnaComponent, ROUTER_DIRECTIVES],
+    providers: [],
+    encapsulation: ViewEncapsulation.Native
 })
 @RouteConfig([
     {path: '/', component: NaslovnaComponent, as: 'Naslovna'}

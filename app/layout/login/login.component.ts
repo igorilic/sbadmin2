@@ -6,7 +6,7 @@ import { Router } from '@angular/router-deprecated';
     selector: 'login',
     templateUrl: 'login.component.html',
     styleUrls: ['login.component.css'],
-    encapsulation: ViewEncapsulation.None
+    encapsulation: ViewEncapsulation.Native
 })
 export class LoginComponent {
     sifra: string = '';
