@@ -3,16 +3,27 @@
     <title>Angular 2 QuickStart</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/metismenu/dist/metisMenu.min.css">
+    <link rel="stylesheet" href="app/assets/css/styles.css">
 
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
 
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    
     <script src="node_modules/systemjs/dist/system.src.js"></script>
 
     <script src="systemjs.config.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/ng2-bootstrap/bundles/ng2-bootstrap.min.js"></script>
+    <script src="node_modules/metismenu/dist/metisMenu.min.js"></script>
+    <script src="app/assets/js/site.js"></script>
+    
+    
     <script>
       System.import('app').catch(function(err){ console.error(err); });
     </script>
@@ -20,5 +31,6 @@
 
   <body>
     <my-app>Loading...</my-app>
+    
   </body>
 </html>
