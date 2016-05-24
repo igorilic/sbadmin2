@@ -8,6 +8,5 @@ import 'rxjs/Rx';
 
 bootstrap(AppComponent, [
     HTTP_PROVIDERS,
-    ROUTER_PROVIDERS,
-    provide(LocationStrategy, { useClass: HashLocationStrategy })
+    ROUTER_PROVIDERS
 ]);

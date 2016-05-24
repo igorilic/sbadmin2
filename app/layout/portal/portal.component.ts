@@ -15,6 +15,7 @@ import { TopnavComponent } from '../nav/topnav/topnav.component';
     styles:[`
     body {
         background: none;
+        background-color: #f8f8f8;
     }
     `],
     directives: [ROUTER_DIRECTIVES, NaslovnaComponent, SidenavComponent, TopnavComponent]
