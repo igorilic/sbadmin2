@@ -13,7 +13,7 @@ export class TestLoginService {
     testPostLogin(radnik: IRadnik): Observable<IRadnik> {
         return this._http.get(this.url)
             .map((res: Response) => res.json())
-            .do((data: IRadnik) => console.log(JSON.stringify(data.VRSTA_ZADATAKA[0].DecaZadaci)))
+            // .do((data: IRadnik) => console.log(JSON.stringify(data.VRSTA_ZADATAKA[0].DecaZadaci)))
             .catch(this.handleError); 
     }
     

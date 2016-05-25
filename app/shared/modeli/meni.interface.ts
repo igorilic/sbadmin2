@@ -3,5 +3,7 @@ export interface IMeni {
     NADREDJENI_ZAD: number;
     NAZIV_ZAD: string;
     URL_FORME: string;
+    Breadcrumb: number[];
+    Depth: number;
     DecaZadaci?: IMeni[];
 }
